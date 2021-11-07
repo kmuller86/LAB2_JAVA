@@ -19,18 +19,64 @@ public class Main {
                 elementów listy
           */
 
+        Scanner scan = new Scanner (System.in);
+
         System.out.println("Zad 1");
 
         ArrayList<String> animals = new ArrayList<>();
-        Scanner scan = new Scanner (System.in);
 
+
+        System.out.println("Podaj nazwy zwierząt");
+
+        for (int i = 0; i < 5; i++){
+            animals.add(scan.next());
+        }
+        showAnimals(animals);
+
+        animals.remove(animals.size()-1);
+        animals.remove(animals.size()-1);
+
+        animals.add("zebra");
+        animals.add("zyrafa");
+        animals.add("slon");
+
+        showAnimals(animals);
+        System.out.println(animals.size());
+
+        Collections.sort(animals, Collections.reverseOrder());
+
+        showAnimals(animals);
 
          /* zad.2 Napisać program który stworzy Set<Integer> i wprowadzamy 10 liczb z klawiatury
                 niech liczby się powtarzają, proszę posortować a następnie wyświetlić zawartość set-a w konsoli
                  a następnie przeiterować i wyświetlić forEach-em (jak wyżej)
          */
 
+        System.out.println("Zad 2");
 
+        Set<Integer> numbers = new TreeSet<>();
+
+        for(int i = 0; i <10; i++) {
+            numbers.add(Integer.parseInt(scan.next()));
+        }
+
+        for(int numb: numbers) {
+            System.out.println(numb);
+        }
+
+
+
+
+
+
+
+
+    }
+
+    static void showAnimals (ArrayList<String> animals) {
+        for (String animal: animals){
+            System.out.println(animal);
+        }
     }
 
 }
