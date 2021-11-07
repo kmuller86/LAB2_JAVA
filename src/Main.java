@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 public class Main {
 
@@ -13,12 +14,22 @@ public class Main {
         d) wstawić wywołanie metody do metody main
         */
 
+        System.out.println("Zad 1");
+
+        int [] numberAr = new int [20];
+        fillArray(numberAr);
+        showArray(numberAr);
+
         /* zad.2
         a) stworzyc tablicę typu String[6],
         b) napisać metodę która uzupełni tablicę wartościami podawanymi z klawiatury
             (użyć do tego pętli i klasy Scanner),
         c) napisać metodę która wyświetli elementy tablicy od ostatniego elementu do elementu o indeksie 0,
         */
+
+        System.out.println("Zad 2");
+
+        String [] stringAr = new String[6];
 
         /* zad.3
         a) napisać metodę która przyjmuje 1 parametr typu String, metoda nic nie zwraca, tylko
@@ -39,4 +50,28 @@ public class Main {
 
     }
 
-}
+    public static void fillArray(int [] ar) {
+        int i = 40;
+        int index = 0;
+        while ((i >= 20) && index < ar.length) {
+            ar[index] = i;
+            i--;
+            index ++;
+        }
+    }
+
+    public static void showArray(int [] ar) {
+        for (int numb: ar)
+        System.out.println(numb);
+        }
+
+        public static void fillStringArray(String [] ar) {
+            for (String x: ar) {
+                Scanner scan = new Scanner(System.in);
+
+
+            }}}
+
+
+
+
