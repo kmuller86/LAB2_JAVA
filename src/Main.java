@@ -19,6 +19,11 @@ public class Main {
                 elementów listy
           */
 
+        System.out.println("Zad 1");
+
+        ArrayList<String> animals = new ArrayList<>();
+        Scanner scan = new Scanner (System.in);
+
 
          /* zad.2 Napisać program który stworzy Set<Integer> i wprowadzamy 10 liczb z klawiatury
                 niech liczby się powtarzają, proszę posortować a następnie wyświetlić zawartość set-a w konsoli
