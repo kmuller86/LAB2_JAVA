@@ -30,6 +30,7 @@ public class Main {
         System.out.println("Zad 2");
 
         String [] stringAr = new String[6];
+        fillStringArray(stringAr);
 
         /* zad.3
         a) napisać metodę która przyjmuje 1 parametr typu String, metoda nic nie zwraca, tylko
@@ -68,9 +69,10 @@ public class Main {
         public static void fillStringArray(String [] ar) {
             for (String x: ar) {
                 Scanner scan = new Scanner(System.in);
-
-
-            }}}
+                x = scan.next();
+            }
+    }
+}
 
 
 
