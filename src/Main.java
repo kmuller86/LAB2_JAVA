@@ -61,8 +61,16 @@ public class Main {
         */
 
         System.out.println("Zad.3a");
+        /*
+        while (true) {
+            System.out.println("sprawdzam");
+        }
+         */
 
-
-
+        /*
+        while (false) {
+            System.out.println("sprawdzam");
+        }
+         */
     }
 }
