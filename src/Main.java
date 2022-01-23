@@ -23,6 +23,10 @@ public class Main {
 
         System.out.println("Zad 1");
 
+        /* Polecam deklarować listy, sety, mapy za pomocą interfejsu, mozna wtedy zawsze później implementować różnymi klasami
+            List<String> lista = new ArrayList<>();
+            lista = new LinkedList<>();
+        */
         ArrayList<String> animals = new ArrayList<>();
 
 
